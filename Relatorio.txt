@@ -1,0 +1,16 @@
+1 - Containers são basicamente caixinhas pra empacotar um app com tudo que ele precisa pra rodar, sem depender do sistema onde tá sendo executado e o Docker é a ferramenta mais usada pra isso porque facilita criar, rodar e compartilhar os containers de forma rápida e eficiente, evitando aquele problema comum como o professor explicou na sala, de “funciona no meu PC, mas não na seu”.
+
+2- é um gerenciador de processos PHP que deixa o código rodando mais rápido e eficiente. O Nginx nao processa PHP sozinho, então ele manda as requisições pra o PHP-FPM, que executa o código e devolve a resposta onde acab melhorando o desempenho.
+
+3-O Apache mexe com um esquema de processos, e o Nginx usa um modelo baseado nos eventos então o Apache é mais fácil de configurar, mas pode consumir mais memória em sites com muito movimento e o Nginx é mais leve e rápido para lidar com muitas conexões ao mesmo tempo, entao é melhor pra sites grandes.
+
+4-O Docker usa imagens de modelos, para criar containers cada imagem é feita de camadas que armazenam o sistema as dependências e também o app e os containers são as "instâncias" das imagens rodando.
+O multi-stage build é a técnica que divide o processo de build em várias etapas dentro do mesmo Dockerfile e permite usar uma imagem mais completa pra compilar o app e depois copiar só o o que é preciso pra uma imagem final mais leve então economiza muito espaço e melhora o desempenho também.
+
+
+
+Explicacao:
+
+fiz a construcao da imagem do docker, depois que fiz a criacao dela executei o container para que a app 
+pudesse ser acessada pelo navegador entao eu configurei o docker na minha maquina pois nao tinha instalado
+ele ainad e direcionei pra porta especifica, entao abri o navegador e e acessei o endereco.
